@@ -1,0 +1,25 @@
+@charset "UTF-8";
+header{
+    background-color: var(--color1);
+    min-height: 50px;
+}
+nav {
+    line-height: 50px;
+    text-align: center;
+}
+nav > a {
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+}
+body {
+    font: normal 1em var(--font-standard);
+    background-image: url(../images/img-fundo.jpg);
+    background-repeat: repeat;
+}
+footer {
+    min-height: 20px;
+    text-align: center;
+    color: white;
+    background-color: var(--color1);
+}
