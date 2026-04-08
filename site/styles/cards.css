@@ -50,3 +50,17 @@
   font-size: 14px;
   color: #cbd5f5;
 }
+
+.container-colum {
+  display: flex; /* Alinha as colunas lado a lado */
+  justify-content: space-between;
+  padding: 50px;
+  text-align: center;
+}
+.coluna {
+  flex: 1; /* Faz as 3 colunas terem o mesmo tamanho */
+  padding: 0 40px;
+}
+.coluna + .coluna {
+  border-left: 3px solid var(--color3); /* Cor laranja da imagem */
+}

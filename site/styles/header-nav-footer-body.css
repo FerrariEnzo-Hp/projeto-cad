@@ -13,8 +13,7 @@ nav > a {
     color: white;
 }
 body {
-    font: normal 1em var(--font-standard);
-    
+    font: normal 1em var(--font-standard);   
     background-repeat: repeat;
 }
 footer {
