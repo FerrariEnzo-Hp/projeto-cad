@@ -14,7 +14,7 @@ nav > a {
 }
 body {
     font: normal 1em var(--font-standard);
-    background-image: url(../images/img-fundo.jpg);
+    
     background-repeat: repeat;
 }
 footer {
