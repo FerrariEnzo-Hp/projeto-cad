@@ -57,10 +57,10 @@
   padding: 50px;
   text-align: center;
 }
-.coluna {
+.colum {
   flex: 1; /* Faz as 3 colunas terem o mesmo tamanho */
   padding: 0 40px;
 }
-.coluna + .coluna {
+.colum + .colum {
   border-left: 3px solid var(--color3); /* Cor laranja da imagem */
 }
