@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header{
-    background-color: var(--color1);
+    background-color: var(--contrast-color);
     min-height: 50px;
 }
 nav {
@@ -10,7 +10,10 @@ nav {
 nav > a {
     padding: 30px;
     text-decoration: none;
-    color: white;
+    color: var(--color1);
+}
+header > img{
+    max-width: 75px;
 }
 body {
     font: normal 1em var(--font-standard);   
