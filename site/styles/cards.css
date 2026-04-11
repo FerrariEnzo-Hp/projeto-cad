@@ -25,10 +25,11 @@
     transition: 0.3s;
     color: white;
     max-width: 475px;
-    max-height: 300px;
+    max-height: 150px;
 }
 div#card-unic{
-  margin: auto;
+  grid-column: 1 / -1;
+  justify-self: center;
 }
 .card:hover {
   transform: translateY(-3px);
@@ -46,7 +47,7 @@ div#card-unic{
   border: none;
   height: 1px;
   background: white;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 .card p {
   font-size: 14px;
