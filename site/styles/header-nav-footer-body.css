@@ -23,6 +23,5 @@ body {
 footer {
     min-height: 20px;
     text-align: center;
-    color: white;
-    background-color: var(--color1);
+    background-color: var(--contrast-color);
 }
