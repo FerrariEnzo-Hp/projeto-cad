@@ -1,6 +1,6 @@
 .container-card{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     padding: 40px;
 }
@@ -24,12 +24,15 @@
     box-shadow: 0 0 15px rgba(9, 2, 109, 0.4);
     transition: 0.3s;
     color: white;
-    max-width: 475px;
+    max-width: 320px;
     max-height: 150px;
+    flex: 0 0 470px;
 }
-div#card-unic{
+.card:last-child {
   grid-column: 1 / -1;
   justify-self: center;
+  width: fit-content;
+  width: 475px;
 }
 .card:hover {
   transform: translateY(-3px);

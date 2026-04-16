@@ -20,7 +20,12 @@ h2{
     font-family: var(--font-emphasis);
     font-size: 2em;
 }
+div#img-init{
+    background-image: url(../images/img-fundo2.jpg);
+    min-height: 400px;
+}
 article {
+    background-image: url(../images/img-fundo.jpg);
     background-color: var(--bgcolor);
     margin: 40px;
     border-radius: 30px;
