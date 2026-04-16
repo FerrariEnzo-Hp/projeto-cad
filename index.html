@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header-nav-footer-body.css">
     <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/hero.css">
 </head>
 <body>
     <header>
@@ -19,6 +21,49 @@
         </nav>
     </header>
     <main>
+        <section class="hero">
+            <div class="hero-container">
+    
+                <div class="hero-text">
+                <h1>
+                    Projetos Elétricos e Automação<br>
+                    <span> Sob Demanda </span>
+                </h1>
+
+                <p>
+                    Conectamos você com profissionais qualificados para seus projetos elétricos e de automação residencial. Visualização 3D, preços transparentes.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary">Começar Agora</a>
+                    <a href="#" class="btn-secondary">Saiba Mais</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <h2>500+</h2>
+                        <span>PROJETOS CONCLUÍDOS</span>
+                    </div>
+                    <div>
+                        <h2>200+</h2>
+                        <span>PROFISSIONAIS</span>
+                    </div>
+                        <div>
+                        <h2>98%</h2>
+                        <span>SATISFAÇÃO</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="sua-imagem.jpg" alt="Automação residencial">
+            </div>
+
+            </div>
+        </section>
+
+
+
        <div id="img-init">
 
         </div>
@@ -77,13 +122,16 @@
     <footer>
         <p>&copy;Amtriz, todos os direitos reservados a Amtriz</p>
     </footer>
-    <dialog id="modal-whatsapp">
-        <button class="close-modal" data-modal="modal-whatsapp">X</button>
+    <dialog class="modal" id="modal-whatsapp">
+        <button class="close-modal" data-modal="modal-whatsapp"><i class="fa-solid fa-xmark"></i></button>
         <h2>Entre em contato</h2>
     </dialog>
-    <dialog id="modal-telegram">
-        <button class="close-modal" data-modal="modal-telegram">X</button>
+    <dialog class="modal" id="modal-telegram">
+        <button class="close-modal" data-modal="modal-telegram"><i class="fa-solid fa-xmark"></i></button>
         <h2>Entre em contato</h2>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
     </dialog>
     <script src="scripts/script.js"></script>
 </body>
