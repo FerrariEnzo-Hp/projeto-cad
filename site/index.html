@@ -7,23 +7,20 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header-nav-footer-body.css">
     <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/modal.css">
 </head>
 <body>
     <header>
         <nav>
             <a href="">Esquema elétrico residencial</a>
-            <a href="">Diagrama motor</a>
-            <a href="">Whatsapp</a>
-            <a href="">Telegram</a>
+            <a class="open-modal" data-modal="modal-whatsapp">Whatsapp</a>
+            <a class="open-modal" data-modal="modal-telegram">Telegram</a>
             <a href="">Suporte</a>
         </nav>
     </header>
     <main>
-        <div id="img-init">
-            <article id="banner1">
-                    <h1 class="titulo">FAÇA SEUS ESQUEMAS ELETRICOS CONOSCO</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit alias quasi tempore omnis? Doloribus soluta voluptates aut a vel accusantium esse autem, reprehenderit dicta magnam fuga sapiente, eligendi, itaque voluptatem?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus provident nam molestias, libero, numquam impedit nisi omnis rerum tempore praesentium dicta molestiae adipisci quos placeat! Doloribus laboriosam eius</p>
-            </article>
+       <div id="img-init">
+
         </div>
         <h2>NOSSOS PREÇOS</h2>
         <div class="container-card">
@@ -80,6 +77,14 @@
     <footer>
         <p>&copy;Amtriz, todos os direitos reservados a Amtriz</p>
     </footer>
+    <dialog id="modal-whatsapp">
+        <button class="close-modal" data-modal="modal-whatsapp">X</button>
+        <h2>Entre em contato</h2>
+    </dialog>
+    <dialog id="modal-telegram">
+        <button class="close-modal" data-modal="modal-telegram">X</button>
+        <h2>Entre em contato</h2>
+    </dialog>
     <script src="scripts/script.js"></script>
 </body>
 </html>
