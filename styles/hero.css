@@ -1,6 +1,9 @@
 .hero {
   padding: 80px 40px;
   background: #f5f7fb;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 50px;
 }
 
 .hero-container {

@@ -1,76 +1,17 @@
-.modal{
-  margin: auto;
-  max-width: 500px;
-  min-height: 400px;
-}
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s ease;
-  z-index: 1000;
-}
-
-/* quando ativo */
-.modal-overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
-
-/* caixa do modal */
 .modal {
-  background: #0b1f44; /* mesmo tom dos cards */
+  border: none;
+  border-radius: 15px;
+  padding: 25px;
+  background: #0b1f44;
   color: white;
   width: 90%;
-  max-width: 400px;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  transform: translateY(30px);
-  transition: 0.3s ease;
+  max-width: 350px;
+  margin: auto;
+  transition: 0.3s;
 }
 
-/* animação */
-.modal-overlay.active .modal {
-  transform: translateY(0);
-}
-
-/* título */
-.modal h2 {
-  margin-bottom: 15px;
-  font-size: 22px;
-}
-
-/* texto */
-.modal p {
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-
-/* botão */
-.modal a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #f2d55c; /* seu amarelo */
-  color: black;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.modal a:hover {
-  transform: scale(1.05);
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /* botão fechar */
@@ -78,5 +19,60 @@
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 22px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* título */
+.modal h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* LINKS (a parte que você queria) */
+.modal a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #132a5e;
+  padding: 12px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 12px;
+  transition: 0.2s;
+}
+
+/* hover bonitinho */
+.modal a:hover {
+  background: #1c3c85;
+  transform: translateY(-2px);
+}
+
+/* ícone */
+.modal a i {
+  font-size: 20px;
+  color: #25d366; /* whatsapp */
+}
+
+/* texto (tipo Vendas, Suporte...) */
+.modal a span {
+  font-weight: bold;
+  flex: 1;
+}
+
+/* número */
+.modal a {
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+/* número separado */
+.modal a::after {
+  content: attr(data-numero);
+  color: #ccc;
+  font-size: 13px;
 }

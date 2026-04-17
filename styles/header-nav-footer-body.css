@@ -1,6 +1,5 @@
 @charset "UTF-8";
 header{
-    background-color: var(--contrast-color);
     min-height: 50px;
 }
 nav {
